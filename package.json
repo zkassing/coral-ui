@@ -1,0 +1,16 @@
+{
+  "name": "coral-ui",
+  "version": "1.0.1",
+  "description": "A ui for Vue",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ui",
+    "vue",
+    "coral"
+  ],
+  "author": "kassing",
+  "license": "ISC"
+}
