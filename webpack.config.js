@@ -27,14 +27,16 @@ module.exports = {
             loader: 'css-loader'
           }
         ]
+      },{
+        test: /\.vue$/,
+        use: {
+          loader: 'vue-loader'
+        }
       }
     ]
   },
   resolve: {
-    extensions: ['.json', '.js', '.jsx', '.css']
+    extensions: ['.json', '.js', '.css', '.vue']
   },
-  devtool: 'source-map',
-  devServer: {
-    publicPath: path.join('/dist/')
-  }
+  devtool: 'source-map'
 };
