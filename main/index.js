@@ -1,5 +1,3 @@
-
-
 const components = [
   {
     name: 'alert',
@@ -10,7 +8,7 @@ const components = [
 const install = function (Vue, options) {
   if (install.installed) return
   components.map(function(component){
-    Vue.component(componet.name,component)
+    Vue.component(component.name,component)
   })
 }
 if(typeof window !== 'undefined' && window.Vue){
