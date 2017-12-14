@@ -1,24 +1,17 @@
 const path = require('path');
+process.traceDeprecation = true
 module.exports = {
   entry: path.join(__dirname, 'main', 'index'),
   output: {
     filename: 'index.js',
-    path: path.resolve(__dirname, 'lib')
+    path: path.resolve(__dirname, 'lib'),
+    library: 'coral',
+    libraryTarget: 'umd',
+    umdNamedDefine: true
   },
   module: {
     rules: [
       {
-        test: /\.js$/,
-        use: {
-          loader: 'babel-loader',
-          options: {
-            presets: [
-              'es2015'
-            ]
-          }
-        },
-        exclude: /node_modules/
-      },{
         test: /\.css$/,
         use: [
           {

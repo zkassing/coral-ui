@@ -1,10 +1,11 @@
-import alert from '../components/alert'
+
 
 const components = [
-  alert
+  {
+    name: 'alert',
+    template: '<div>1</div>'
+  }
 ]
-
-
 
 const install = function (Vue, options) {
   if (install.installed) return
@@ -12,8 +13,6 @@ const install = function (Vue, options) {
     Vue.component(componet.name,component)
   })
 }
-
-
 if(typeof window !== 'undefined' && window.Vue){
   install(window.Vue)
 }
